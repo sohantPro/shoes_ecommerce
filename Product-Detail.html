@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootstrap demo</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="Product-Detail.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
+</head>
+
+<body>
+   <!-- nav-section-start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><img src="home-img/Group 7091.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Products.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Product-Detail.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Add-To_Card.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                    </li>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34" fill="none">
+                        <path
+                            d="M27.4883 9.84144H23.2704V8.43546C23.2704 6.9439 22.6778 5.51343 21.6231 4.45873C20.5685 3.40404 19.138 2.81152 17.6464 2.81152C16.1549 2.81152 14.7244 3.40404 13.6697 4.45873C12.615 5.51343 12.0225 6.9439 12.0225 8.43546V9.84144H7.80454C7.43165 9.84144 7.07404 9.98957 6.81036 10.2532C6.54669 10.5169 6.39856 10.8745 6.39856 11.2474V26.7132C6.39856 27.8319 6.84295 28.9048 7.63397 29.6958C8.42499 30.4868 9.49784 30.9312 10.6165 30.9312H24.6763C25.795 30.9312 26.8679 30.4868 27.6589 29.6958C28.4499 28.9048 28.8943 27.8319 28.8943 26.7132V11.2474C28.8943 10.8745 28.7462 10.5169 28.4825 10.2532C28.2188 9.98957 27.8612 9.84144 27.4883 9.84144ZM14.8345 8.43546C14.8345 7.68968 15.1307 6.97444 15.6581 6.44709C16.1854 5.91975 16.9006 5.62349 17.6464 5.62349C18.3922 5.62349 19.1074 5.91975 19.6348 6.44709C20.1621 6.97444 20.4584 7.68968 20.4584 8.43546V9.84144H14.8345V8.43546ZM26.0823 26.7132C26.0823 27.0861 25.9342 27.4437 25.6705 27.7074C25.4068 27.9711 25.0492 28.1192 24.6763 28.1192H10.6165C10.2436 28.1192 9.886 27.9711 9.62233 27.7074C9.35866 27.4437 9.21053 27.0861 9.21053 26.7132V12.6534H12.0225V14.0594C12.0225 14.4323 12.1706 14.7899 12.4343 15.0536C12.698 15.3172 13.0556 15.4654 13.4285 15.4654C13.8014 15.4654 14.159 15.3172 14.4227 15.0536C14.6863 14.7899 14.8345 14.4323 14.8345 14.0594V12.6534H20.4584V14.0594C20.4584 14.4323 20.6065 14.7899 20.8702 15.0536C21.1339 15.3172 21.4915 15.4654 21.8644 15.4654C22.2373 15.4654 22.5949 15.3172 22.8586 15.0536C23.1222 14.7899 23.2704 14.4323 23.2704 14.0594V12.6534H26.0823V26.7132Z"
+                            fill="white" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                        <circle cx="11.8342" cy="12.1619" r="10.1378" stroke="white" stroke-width="2.76487" />
+                        <line x1="19.5967" y1="20.1638" x2="25.66" y2="26.2271" stroke="white" stroke-width="3.09169" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                        <path
+                            d="M20.1454 10.8628H8.72183C8.41886 10.8628 8.12829 10.7425 7.91406 10.5283C7.69982 10.314 7.57947 10.0235 7.57947 9.72049C7.57947 9.41751 7.69982 9.12695 7.91406 8.91272C8.12829 8.69848 8.41886 8.57812 8.72183 8.57812H20.1454C20.4484 8.57812 20.739 8.69848 20.9532 8.91272C21.1674 9.12695 21.2878 9.41751 21.2878 9.72049C21.2878 10.0235 21.1674 10.314 20.9532 10.5283C20.739 10.7425 20.4484 10.8628 20.1454 10.8628ZM20.1454 15.4323H8.72183C8.41886 15.4323 8.12829 15.3119 7.91406 15.0977C7.69982 14.8835 7.57947 14.5929 7.57947 14.2899C7.57947 13.987 7.69982 13.6964 7.91406 13.4822C8.12829 13.2679 8.41886 13.1476 8.72183 13.1476H20.1454C20.4484 13.1476 20.739 13.2679 20.9532 13.4822C21.1674 13.6964 21.2878 13.987 21.2878 14.2899C21.2878 14.5929 21.1674 14.8835 20.9532 15.0977C20.739 15.3119 20.4484 15.4323 20.1454 15.4323Z"
+                            fill="black" />
+                        <path
+                            d="M22.4302 2.86719H6.43709C5.52848 2.86818 4.65736 3.22956 4.01487 3.87205C3.37239 4.51454 3.011 5.38566 3.01001 6.29427V17.7179C3.011 18.6265 3.37239 19.4976 4.01487 20.1401C4.65736 20.7826 5.52848 21.144 6.43709 21.145H19.6724L23.9072 25.3797C24.0669 25.5395 24.2704 25.6483 24.492 25.6924C24.7136 25.7365 24.9433 25.7139 25.1521 25.6275C25.3608 25.541 25.5392 25.3946 25.6647 25.2067C25.7903 25.0189 25.8573 24.798 25.8572 24.5721V6.29427C25.8562 5.38566 25.4949 4.51454 24.8524 3.87205C24.2099 3.22956 23.3388 2.86818 22.4302 2.86719ZM20.1454 15.4332H8.72182C8.41884 15.4332 8.12828 15.3128 7.91404 15.0986C7.69981 14.8843 7.57945 14.5938 7.57945 14.2908C7.57945 13.9878 7.69981 13.6973 7.91404 13.483C8.12828 13.2688 8.41884 13.1484 8.72182 13.1484H20.1454C20.4484 13.1484 20.739 13.2688 20.9532 13.483C21.1674 13.6973 21.2878 13.9878 21.2878 14.2908C21.2878 14.5938 21.1674 14.8843 20.9532 15.0986C20.739 15.3128 20.4484 15.4332 20.1454 15.4332ZM20.1454 10.8637H8.72182C8.41884 10.8637 8.12828 10.7434 7.91404 10.5291C7.69981 10.3149 7.57945 10.0243 7.57945 9.72136C7.57945 9.41838 7.69981 9.12782 7.91404 8.91358C8.12828 8.69935 8.41884 8.57899 8.72182 8.57899H20.1454C20.4484 8.57899 20.739 8.69935 20.9532 8.91358C21.1674 9.12782 21.2878 9.41838 21.2878 9.72136C21.2878 10.0243 21.1674 10.3149 20.9532 10.5291C20.739 10.7434 20.4484 10.8637 20.1454 10.8637Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="nav-buton">
+                <a href="Login.html"><button type="button" class="btn">Login</button></a>
+           <a href="Sign-Up-page.html"> <button type="button" class="btn">Sign Up</button></a>
+        </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-section-end -->
+    <!-- heading -->
+    <div class="col-lg-12">
+      <div class="row">
+          <div class="heading">
+              <h4>Product <label>Details</label></h4>
+          </div>
+      </div>
+  </div>
+   <!-- product-detail-section -->
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-2 order-lg-1 order-2">
+               <div class="img-select d-flex flex-lg-column">
+                  <div class="img-item">
+                     <a href="#" data-id="1">
+                        <img
+                           src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg"
+                           alt="shoe image">
+                     </a>
+                  </div>
+                  <div class="img-item">
+                     <a href="#" data-id="2">
+                        <img
+                           src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg"
+                           alt="shoe image">
+                     </a>
+                  </div>
+                  <div class="img-item">
+                     <a href="#" data-id="3">
+                        <img
+                           src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg"
+                           alt="shoe image">
+                     </a>
+                  </div>
+                  <div class="img-item">
+                     <a href="#" data-id="4">
+                        <img
+                           src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg"
+                           alt="shoe image">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1">
+               <div class="img-display mt-5">
+                  <div class="img-showcase">
+                     <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg"
+                        alt="shoe image">
+                     <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg"
+                        alt="shoe image">
+                     <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg"
+                        alt="shoe image">
+                     <img
+                        src="https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg"
+                        alt="shoe image">
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-lg-4 order-3">
+               <div class="product-content mt-5">
+                  <h4 class="product-title">NIKE AIR LEBRON</h4>
+                  <span>ROYAL WHITE</span>
+                  <a href="#" class="product-link">visit nike store</a>
+                  <div class="product-rating">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                     <span>4.7(21)</span>
+                  </div>
+
+                  <div class="product-price">
+                     <p class="last-price">$90.00 <span>$99.00</span> <a href="">(50% off)</a></p>
+                     <p class="new-price">Quatity <input type="button" value="+  2  -"> </p>
+                     <h4><b>AVAILABLE COLORS</b></h4>
+                     <img src="Products-img/color.png" alt="" style="width: 15%;">
+                     <h4><b>AVAILABLE SIZE</b></h4>
+                     <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-secondary">1</button>
+                        <button type="button" class="btn btn-outline-secondary">2</button>
+                        <button type="button" class="btn btn-outline-secondary">3</button>
+                        <button type="button" class="btn btn-outline-secondary">4</button>
+                        <button type="button" class="btn btn-outline-secondary">5</button>
+                        <button type="button" class="btn btn-outline-secondary">6</button>
+                        <button type="button" class="btn btn-outline-secondary">7</button>
+                        <button type="button" class="btn btn-outline-secondary">8</button>
+                        <button type="button" class="btn btn-outline-secondary">9</button>
+                        <button type="button" class="btn btn-outline-secondary">10</button>
+                     </div>
+                     <br><br>
+                     <div class="d-grid gap-2 col-6">
+                        <button class="btn btn-dark" type="button">+ ADD TO CART</button>
+                        <button class="btn" style="background-color:#FB6119; color: white;" type="button">BUY
+                           NOW</button>
+                     </div>
+                  </div>
+
+                  <div class="product-detail">
+                     <h2>AVAILABLE SIZE </h2>
+                     <p>Please enter your Pincode to check for available delivery Options</p>
+                     <div class="input-group input-group-sm mb-3">
+                        <input type="text" style="width: 75px">
+                        <button style="    padding: 9px;background-color:black; color: white;">Check</button>
+                     </div>
+                  </div>
+
+                  <div class="purchase-info d-flex">
+                     <img src="Products-img/Group 7127.png" alt="" style="width: 5%; height: 2%;">
+                     <p>Product Delivery is available at this location <br>Standard Delivery to 14-16 Days</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- product-list-section -->
+
+   <!-- full-page-content -->
+   <style>
+      * {
+         box-sizing: border-box
+      }
+
+      /* Set height of body and the document to 100% */
+      body,
+      html {
+         height: 100%;
+         margin: 0;
+         font-family: Arial;
+      }
+
+      /* Style tab links */
+      .tablink {
+         /* background-color: #555; */
+         /* color: white; */
+         /* float: left; */
+         border: none;
+         outline: none;
+         /* cursor: pointer; */
+         padding: 14px 16px;
+         font-size: 17px;
+      }
+
+      .tablink:hover {
+         background-color: #777;
+      }
+
+      /* Style the tab content (and add height:100% for full page content) */
+      .tabcontent {
+         color: white;
+         display: none;
+         padding: 100px 20px;
+         height: 100%;
+      }
+
+      #Home {
+         background-color: #FB6119;
+      }
+
+      #Contact {
+         background-color: #FB6119;
+      }
+
+      #About {
+         background-color: #FB6119; 
+      }
+   </style>
+
+   <div class="container">
+      <div style="display: flex;justify-content: space-between;">
+
+         <button class="tablink" onclick="openPage('Home', this, '#FB6119')">Description</button>
+         <button class="tablink" onclick="openPage('Contact', this, '#FB6119')">Product Details</button>
+         <button class="tablink" onclick="openPage('About', this, '#FB6119')">Review</button>
+      </div>
+      <hr>
+      <div id="Home" class="tabcontent" >
+        <p>The Nike Air LeBron line refers to a series of basketball shoes created in collaboration with NBA superstar LeBron James. These sneakers are known for their innovative design, performance features, and signature LeBron branding. While I don't have specific information on the latest models or releases beyond September 2021,</p>
+
+      </div>
+
+      <div id="Contact" class="tabcontent">
+         <p>The Nike Air LeBron line refers to a series of basketball shoes created in collaboration with NBA superstar LeBron James. These sneakers are known for their innovative design, performance features, and signature LeBron branding. While I don't have specific information on the latest models or releases beyond September 2021,</p>
+      </div>
+
+      <div id="About" class="tabcontent">
+         <p>The Nike Air LeBron line refers to a series of basketball shoes created in collaboration with NBA superstar LeBron James. These sneakers are known for their innovative design, performance features, and signature LeBron branding. While I don't have specific information on the latest models or releases beyond September 2021,</p>
+      </div>
+</div>
+      <script>
+         function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+               tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+               tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+         }
+
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+      </script>
+      <!-- full-page-content end -->
+      <!-- product-list-section -->
+
+      <div class="c-product-tray">
+
+         <div class="o-wrapper">
+
+            <h2 class="c-product-tray__heading">Recommended Products</h2><!-- /c-product-tray__heading -->
+
+            <div class="c-product-tray__carousel">
+
+               <div class="o-slider-product-tray">
+
+                  <div class="o-slider-product-tray__controls js-controls">
+
+                     <button class="o-slider-product-tray__button o-slider-product-tray__button--prev">
+                        <svg class="o-slider-product-tray__arrow o-slider-product-tray__arrow--prev"
+                           xmlns="http://www.w3.org/2000/svg" viewBox="-44 40.7 11 21.1">
+                           <path d="M-33.5 61.8L-44 51.3l10.5-10.6.5.5-10.1 10.1 10.1 10z" />
+                        </svg><!-- /o-slider-product-tray__arrow -->
+                     </button><!-- /o-slider-product-tray__button -->
+
+                     <button class="o-slider-product-tray__button o-slider-product-tray__button--next">
+                        <svg class="o-slider-product-tray__arrow o-slider-product-tray__arrow--next"
+                           xmlns="http://www.w3.org/2000/svg" viewBox="-44 40.7 11 21.1">
+                           <path d="M-33.5 61.8L-44 51.3l10.5-10.6.5.5-10.1 10.1 10.1 10z" />
+                        </svg><!-- /o-slider-product-tray__arrow -->
+                     </button><!-- /o-slider-product-tray__button -->
+
+                  </div><!-- /o-slider-product-tray__controls -->
+
+
+                  <ul class="o-slider-product-tray__inner js-slider-product-tray">
+
+                     <li class="o-slider-product-tray__slide">
+
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                          <img src="Products-img/Pro_A6T012_1 2.png" alt="">
+                           <div class="content p-2">
+                           <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                           <span style=" color: gray;">ROYAL WHILE</span>
+                           <div class="price-wrap mt-2">
+                              <span class="price"><b>$90.00</b></span>
+                              <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                           </div>
+                          </div> <!-- price-wrap.// -->
+                        </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/Pro_A6T012_1 2.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     <li class="o-slider-product-tray__slide">
+
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                     <li class="o-slider-product-tray__slide">
+                        <div class="c-product-tile" style="background-color: #ebebeb;">
+                           <img src="Products-img/cover.png" alt="">
+                            <div class="content p-2">
+                            <h3 class="c-product-tile__name d-flex"><b>NIKE AIR LEBRON</b><img src="Products-img/star.png" alt="" style="width: 10%;"><span><b>4.9(500)</b></span></h3>
+                            <span style=" color: gray;">ROYAL WHILE</span>
+                            <div class="price-wrap mt-2">
+                               <span class="price"><b>$90.00</b></span>
+                               <del class="price-old" style="color: gray;"><b>$99.00</b></del>
+                            </div>
+                           </div> <!-- price-wrap.// -->
+                         </div><!-- /c-product-tile -->
+                     </li><!-- /o-slider-product-tray__slide -->
+
+                  </ul><!-- /o-slider-product-tray__inner -->
+
+               </div><!-- /o-slider-product-tray -->
+
+            </div><!-- /c-product-tray__carousel -->
+
+         </div><!-- /o-wrapper -->
+
+      </div><!-- /c-product-tray -->
+      <!-- product-list-section end-->
+
+ <!-- footer-section -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+    <footer class="bg-black text-center text-lg-start text-white mt-5">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+            <div class="col-xl-8 col-md-8 mb-30">
+
+                <div class="single-cta">
+                    <div class="cta-text">
+                        <h4 style="font-size: 2.5rem;">Sign Up for <span style=" color: #ff5e14;">Updates</span><br>& Newsletter</h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Type your Email" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="nav-buton2">Subscribe Now</button>
+                  </div>
+            </div>
+            <hr>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+  
+            <div class="d-flex flex-row justify-content-center"><img src="home-img/Group 7091.png" alt=""></div>
+  
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center mt-5">
+              <li>
+                <a class="text-white px-2" href="#!">
+          <img src="home-img/facebook 1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+               <img src="home-img/instagram (1) 1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+             <img src="home-img/linkedin (1) 1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+          <img src="home-img/twitter (1) 1.png" alt="">
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: center;">
+            <h5 class="text-uppercase mb-4">Find Product</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Men</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Wome</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Nike</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Boy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Kid's</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Bata</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Free Won</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: center;">
+            <h5 class="text-uppercase mb-4">Get Help</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white">Return Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Privet Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Contact Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Payment Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: center;">
+            <h5 class="text-uppercase mb-4">About Us</h5>
+  
+            <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">News</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">Our Policy</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">service</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">Customer</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">Faq</a>
+                  </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <hr>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Nycs Shoes, Inc. | All Right Reserved
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
+      <script>
+         const imgs = document.querySelectorAll('.img-select a');
+         const imgBtns = [...imgs];
+         let imgId = 1;
+
+         imgBtns.forEach((imgItem) => {
+            imgItem.addEventListener('click', (event) => {
+               event.preventDefault();
+               imgId = imgItem.dataset.id;
+               slideImage();
+            });
+         });
+
+         function slideImage() {
+            const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+            document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+         }
+
+         window.addEventListener('resize', slideImage);
+      </script>
+      <!-- product-detail-section-end -->
+</body>
+<!-- product-list-section -->
+<script>
+   var slider = tns({
+      arrowKeys: true,
+      autoplay: false,
+      container: ".js-slider-product-tray",
+      controls: true,
+      controlsContainer: ".js-controls",
+      gutter: 24,
+      items: 1.2,
+      loop: false,
+      mouseDrag: true,
+      nav: false,
+      responsive: {
+         360: {
+            items: 2.4,
+         },
+         600: {
+            items: 3.6
+         },
+         900: {
+            items: 6
+         },
+      },
+      slideBy: "page",
+      touch: true
+   });
+</script>
+
+</html>

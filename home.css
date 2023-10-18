@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+p,
+h1,
+h3,
+h6,
+span {
+    text-transform: capitalize;
+}
+
+.navbar {
+    background:black;
+    box-shadow: 0 4px 6px rgba(22, 22, 26, 0.18);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.nav-buton button{
+  box-shadow: 0px 0px 7px -2px;
+  border-color:white;
+  background-color:black;
+  color: #FB6119;
+}
+
+.nav-buton button:hover {
+    background-color: #FB6119;
+    color: white;
+}
+
+.icon {
+    margin-right: 2%;
+}
+
+/* nav-section-end */
+
+/* banner-section */
+.banner-content h1 {
+    color: black;
+    font-size: 550%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner-content h1 span {
+    color: #FB6119;
+}
+
+.banner-content p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-content button {
+    box-shadow: 0px 0px 7px -2px;
+  border-color: black;
+}
+
+.banner-content button:hover {
+    background-color: #FB6119;
+    color: white;
+}
+
+.yourImage {
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+
+.banner-content button:hover .yourImage {
+    filter: invert(0%);
+}
+/* about-us */
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.containered {
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 83%;
+    top: -6%;
+}
+  
+  
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Review-section  */
+        .card-img-top {
+            width: 60%;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            padding: 1.5em 0.5em 0.5em;
+            text-align: center;
+            border-radius: 2em;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .btn-primary {
+            border-radius: 2em;
+            padding: 0.5em 1.5em;
+        }
+  
+  
+ /* footer-section */
+ 
+ .list-unstyled li a{
+  text-align: center;
+}
+.nav-buton2{
+  background-color: #141414;
+  border-color: black;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
